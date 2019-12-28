@@ -31,35 +31,6 @@
           </provider>
         </config-file>
         <source-file src="src/android/res/xml/opener_paths.xml" target-dir="res/xml" />
-        <preference name="ANDROID_SUPPORT_V4_VERSION" default="27.+"/>
-        <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
-    </platform>
-
-    <!-- iOS -->
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="FileOpener2">
-                <param name="ios-package" value="FileOpener2" />
-            </feature>
-        </config-file>
-        <source-file src="src/ios/FileOpener2.m" />
-        <header-file src="src/ios/FileOpener2.h" />
-    </platform>
-
-	<!-- WP8 -->
-	<platform name="wp8">
-		<config-file target="config.xml" parent="/*">
-		  <feature name="FileOpener2">
-			<param name="wp-package" value="FileOpener2" />
-		  </feature>
-		</config-file>
-		<source-file src="src/wp8/FileOpener2.cs" />
-	</platform>
-
-	<!-- windows -->
-    <platform name="windows">
-        <js-module src="src/windows/fileOpener2Proxy.js" name="fileOpener2Proxy">
-            <merges target="" />
-        </js-module>
+        <framework src="com.android.support:support-v4:24.1.1+"/>
     </platform>
 </plugin>
